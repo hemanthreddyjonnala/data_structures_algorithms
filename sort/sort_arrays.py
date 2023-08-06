@@ -1,7 +1,7 @@
 from typing import List
 
-class Solution:
-    def sortArray(self, nums: List[int]) -> List[int]: 
+class Sort:
+    def insertion_sort(self, nums: List[int]) -> List[int]: 
         """ Insertion Sort """       
         for i in range(1, len(nums)):
             a = nums[i]
@@ -16,6 +16,6 @@ class Solution:
                 
 nums = [5,2,3,1]
 
-sort_object = Solution()
+sort_object = Sort()
 
-print(sort_object.sortArray(nums))
+print(Sort.insertion_sort(nums))
