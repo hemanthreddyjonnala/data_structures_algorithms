@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]: 
         """ Insertion Sort """       
@@ -12,3 +14,8 @@ class Solution:
             nums[j+1] = a
         return nums
                 
+nums = [5,2,3,1]
+
+sort_object = Solution()
+
+print(sort_object.sortArray(nums))
