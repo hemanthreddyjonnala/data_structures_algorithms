@@ -18,4 +18,4 @@ nums = [5,2,3,1]
 
 sort_object = Sort()
 
-print(Sort.insertion_sort(nums))
+print(sort_object.insertion_sort(nums))
