@@ -25,6 +25,15 @@ class Sort:
                     swap_index = j
             nums[swap_index], nums[i] = nums[i], nums[swap_index]
         return nums
+
+    def bubble_sort(self, nums: List[int]) -> List[int]: 
+        """ Bubble Sort"""   
+        n = len(nums)    
+        for i in range(n):
+            for j in range(n-1):
+                if nums[j]>nums[j+1]:
+                    nums[j], nums[j+1] = nums[j+1], nums[j]
+        return nums
                 
 nums = [5,2,3,1]
 
@@ -32,3 +41,4 @@ sort_object = Sort()
 
 print(f"insertion sort: {sort_object.insertion_sort(nums)}")
 print(f"slection sort: {sort_object.selection_sort(nums)}")
+print(f"Bubble sort: {sort_object.bubble_sort(nums)}")
